@@ -1,5 +1,5 @@
 # um5302ta_fan_speed
-A small script to control the fan of the Asus Zenbook S 13 OLED UM5302TA.
+A small script to control the fan of the ASUS Zenbook S 13 OLED UM5302TA.
 
 ## Usage.
 
