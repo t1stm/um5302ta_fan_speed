@@ -5,6 +5,7 @@
 
 Mode=""
 EC_Address="0x61"
+EC_Probe_Application_Name="ec-probe"
 
 while [[ $# -gt 0 ]]; do
     case $1 in
@@ -34,10 +35,10 @@ Available parameters are:
 	exit 1;
 fi
 
-EC_Probe_Location="$(which ec-probe)"
+EC_Probe_Location="$(which $EC_Probe_Application_Name)"
 
 if [ $? -ne 0 ]; then 
-	echo "NBFC EC-Probe isn't installed on the system. Please make sure it's installed, and present in \$PATH" >&2;
+	echo "NBFC EC-Probe isn't installed on the system. Please make sure it's installed, and present in \$PATH. (If you're using NBFC Linux please change the name of the executable in this script.)" >&2;
 	exit 1;
 fi
 
